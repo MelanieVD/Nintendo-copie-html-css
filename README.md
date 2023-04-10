@@ -1,1 +1,2 @@
-# Nintendo-copie-html-css
+La consigne pour cet exercice était de reproduire la page d'accueil de Nintendo (https://www.nintendo.fr/) à partir d'une ébauche d'un collègue de classe. J'ai travaillé à partir de l'ébauche de Nseya. 
+Il s'agit d'un exercice réalisé dans le cadre d'une formation.
