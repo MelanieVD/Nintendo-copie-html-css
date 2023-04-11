@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="/style.css">
     <title>Site officiel de Nitendo France</title>
 </head>
@@ -131,10 +132,7 @@
     <main>
         <section id="gallerie">
             <div class="grid-container">
-                <div>
-                    <img class="grid-item" src="img/img1.jpg" alt="The legend of Zelda, Tears of the kingdom">
-                </div>
-                
+                <img class="grid-item" src="img/img1.jpg" alt="The legend of Zelda, Tears of the kingdom">
                 <img class="grid-item" src="img/img2.jpg" alt="Splatoon 3, saison des bourgeons">
                 <img class="grid-item" src="/img/img3.jpg" alt="Nintendo Switch, disponibles en avril">
                 <img class="grid-item" id="portrait1" src="/img/img4.jpg" alt="Cereza and the lost Demon">
@@ -294,8 +292,16 @@
         <section class="reseau-sociaux">
             <nav>
                 <span>PARTAGER SUR :</span>
-                <button><img src="/img/facebook.png" alt="Partager sur Facebook"> Facebook</button>
-                <button><img src="/img/twitter.png" alt="Partager sur Twitter">&emsp; Twitter</button>
+                <!-- <button>
+                    <img src="/img/facebook.png" alt="Partager sur Facebook"> 
+                    Facebook
+                </button>
+                <button>
+                    <img src="/img/twitter.png" alt="Partager sur Twitter">
+                    Twitter
+                </button> -->
+                <button class="reseau-sociaux-button reseau-sociaux-button-fb">Facebook</button>
+                <button class="reseau-sociaux-button reseau-sociaux-button-twt">Twitter</button>
             </nav>
         </section>
         <section class="bas-de-page">

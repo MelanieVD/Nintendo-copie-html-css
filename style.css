@@ -12,6 +12,7 @@ header {
   display: flex;
   position: fixed;
   background: #e60012;
+  z-index: 1;
 }
 
 /*J'ai regroupé des informations css dans le header pour éviter des répétitions.*/
@@ -202,19 +203,16 @@ aside {
   height: min-content;
   border-radius: 5px;
   display: block;
-
 }
 
+.grid-item{
+  transition: transform 0.5s;
+}
 
-.grid-container div:hover{
-  transition: top 0.2s ease-in-out;
-  margin-bottom: 1rem;
-  position: relative;
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  display: block;
-  line-height: 1.5;
+.grid-item:hover{
+  transform: translateY(-10px);
+  cursor: pointer;
+  transition: transform 0.5s;
 }
 
 #paysage1 {
@@ -367,37 +365,32 @@ body footer section:first-of-type nav {
   font-family: sans-serif;
   font-size: 2em;
   font-weight: bolder;
+  margin-right: 100px;
 }
 
-body footer section:first-of-type nav button {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  font-size: medium;
-  color: white;
-  margin: 0.5em;
-  border-radius: 0.2cm;
-
+.reseau-sociaux-button{
+  background-size: 2.5rem; /* 1rem = 16px */
+  background-repeat: no-repeat;
+  margin-right: .6rem;
+  padding: 10px 50px;
+  padding-right: 80px;
+  height: 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 216px;
 }
 
-.reseau-sociaux nav button:first-of-type {
-  background: #3b5998;
+.reseau-sociaux-button-fb{
+  background-image: url('/img/facebook.png');
+  background-color: #3b5998;
+  background-position: 5px bottom;
 }
 
-.reseau-sociaux nav button:nth-of-type(2) {
-  background: #55acee;
-}
-
-.reseau-sociaux nav button img {
-  width: 3em;
-}
-
-.reseau-sociaux nav button:nth-of-type(2) img {
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
-  width: 1.5em;
+.reseau-sociaux-button-twt{
+  background-image: url('/img/twitter.png');
+  background-color: #55acee;
+  background-size: 1.5rem;
+  background-position: 5px center;
 }
 
 .bas-de-page{
